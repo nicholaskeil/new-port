@@ -1,0 +1,97 @@
+<html>
+<style type ="text/css">
+    html{
+        background-color:steelblue
+    } 
+    
+    p{
+        font-family: helvetica;
+        color:white;
+        font-size:150px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .boxed-1{
+        display: inline-block;
+        vertical-align:center;
+    }
+    .boxed-2{
+        display:none
+    }
+    /* These are Media Queries based on the screen's size — below. */
+    @media(max-width:1500px){
+        html{
+            background-color:darkblue
+        }
+        .boxed-1{
+            display:inline-block;
+            font-size: 240px;
+        }
+         .boxed-2{
+            display: none;
+                width:100%;
+    }
+         .boxed-3{
+            display: none;
+                width:100%;
+        }
+    @media(max-width:900px){
+        html{
+            background-color:cadetblue
+        }
+        p{
+            font-size: 100px;
+            font-family: helvetica;
+        }
+           .boxed-1{
+            display:none;
+            font-size: 240px;
+        }
+         .boxed-2{
+            display: inline-block;
+                width:100%;
+             
+    }
+          .boxed-3{
+            display: none;
+                width:100%;
+        }
+        }
+    @media(max-width:1000px){
+        html{
+            background-color:skyblue
+        }
+        
+        .boxed-1{
+            display: none;
+                width:100%;
+        }
+    }
+        
+         @media(max-width:1000px){
+        html{
+            background-color:skyblue
+        }
+        
+        .boxed-3{
+            display: inline-block;
+                width:100%;
+        }
+         .boxed-1{
+            display: none;
+                width:100%;
+    }
+              .boxed-2{
+            display: none;
+                width:100%;
+        
+</style>
+
+<body>
+    
+<p class="boxed-1">
+   HELLO DO NOT RESIZE.
+</p><p class="boxed-2">THANK YOU FOR NO LISTENING</p>
+<p class="boxed-3"> NO THANK YOU!!!!</p>
+</body>
+</html>

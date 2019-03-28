@@ -1,0 +1,51 @@
+h1{
+        font-family: CormorantGaramond-SemiBold;
+        margin-top: 20px;
+    }
+    
+    body{
+        background-color: #f8f8ff;
+        margin-left: 15%;
+        padding-top: 10%;
+    }
+    
+    #left-column{
+        font-family: helvetica;
+        font-size: 15px;
+    }
+
+    #right-column{
+        font-family: helvetica;
+        font-size: 15px
+    }
+    
+    ul{
+        list-style: none;
+        margin-left: -2.5%;
+    }
+    
+    a{
+        transition: all 0.35s ease;
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover{
+        color: red;
+        font-size: 2.5em;
+        padding-bottom:-20%;
+    }
+    
+    h2{
+        margin-top:30px;
+        font-family: silom;
+        color: #20C20E;
+    }
+
+    a>div { display: none; }
+    a:hover>div { display: block; 
+                position: absolute;
+                left: 1000px;
+                top: 225px;
+                height: 100vh;
+            }

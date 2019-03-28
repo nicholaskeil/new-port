@@ -1,0 +1,531 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+    #everything{
+transform: scale(200%);   
+    }
+    body{
+        margin:0;
+        background-color:ghostwhite;
+    }
+    h1{
+        color: red;
+        
+        margin: 50px;
+        border: 3px dotted red;
+        box-sizing: border-box;
+        padding:5%;
+        width: 50%;
+        background-color: darkblue;
+    }
+    a_header{
+        color:blue;
+        margin: 0;
+    }  
+    
+    p{
+        color:black;
+        font-family: "helvetica";
+        
+    }
+    h2{
+        display: inline-block;
+        background-color:green;
+        color: white;
+        width: 49%;
+        margin-bottom:20px;
+        text-align: center;
+    }
+    
+    #second_h2{
+        
+        background-color: black;
+    }
+    
+    h3{
+        display: inline-block;
+        width:50px;
+        height: 50px;
+        background-color: red;
+    }
+    #outder_div,#inner_div{
+        height: 400px;
+        width: 400px;
+        display: block
+    }
+    #outer_div_1{
+        background-color: red;
+        width:200px; 
+        height:200px;}
+    
+    #inner_div_1{
+        background-color:yellow;
+        width:100px;
+        height:100px;
+        margin-left: 100px  }
+
+        #outer_div_2{
+        background-color: red;
+        width:200px; 
+        height:200px;}
+    
+    
+    
+    
+    
+        #outder_div_2,#inner_div_2,#inner_inner_div_2{
+        height: 400px;
+        width: 400px;
+        display: inline-block;
+            position:relative;
+    }
+    
+    #outer_div_2{
+        background-color: orange;
+        width:200px; 
+        height:200px;}
+    #inner_div_2{
+        background-color:blue;
+        width:100px;
+        height:100px;
+        margin-top: 100px  }
+
+    #inner_inner_div_2{
+        background-color:blue;
+        width:100px;
+        height:50px;
+        margin-top: -100px;
+        margin-left: 100px;  }
+    
+    
+    
+    #outer_div_3,#inner_div_3{
+         display: inline-block;
+            position:relative;
+    }
+    
+    
+    #inner_div_3{
+         background-color:ghostwhite;
+        width:100px;
+        height:100px;
+        margin-left:50px;
+        margin-top: 50px;
+    }
+    
+      #outer_div_3{
+        background-color: red;
+        width:200px; 
+        height:200px;}
+    
+    
+    #foursquare_tl,#foursquare_tr,#foursquare_bl,#foursquare_br{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    #foursquare_tl{
+        background-color:blue;
+        width:100px;
+        height:100px;
+    }
+    #foursquare_tr{
+        background-color:black;
+        width:100px;
+        height:100px;
+        margin-left: 100px;
+        margin-top: -100px;
+    }
+    #foursquare_bl{
+        background-color:pink;
+        width:100px;
+        height:100px;
+    }
+    #foursquare_br{
+         background-color:purple;
+        width:100px;
+        height:100px;
+        margin-left: 100px;
+            margin-top:-100px;
+    }
+    
+    
+    
+    
+    
+    
+    #div_outer_4,#div_tl_half,#div_tr_half,#div_bc_half{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_4{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+    #div_tl_half
+    {         background-color:yellow;
+        width:100px;
+        height:50px;
+    margin-top: -200px}
+    #div_tr_half{
+          background-color:blue;
+        width:100px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -200px;
+    }
+    #div_bc_half
+    {
+       background-color:blue;
+        width:100px;
+        height:50px;
+        margin-left: 50px;
+        margin-top: -100px;  
+    }
+    
+     #div_outer_5,#div_tl_half5,#div_tr_half5,#div_bc_half5{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_5{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+    #div_tl_half5
+    {         background-color:yellow;
+        width:100px;
+        height:50px;
+    margin-top: -100px}
+    #div_tr_half5{
+          background-color:yellow;
+        width:100px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -100px;
+    }
+    #div_bc_half5
+    {
+       background-color:blue;
+        width:100px;
+        height:100px;
+        margin-left: 50px;
+        margin-top: -150px;  
+    }
+    
+    
+    
+    
+    #div_outer_6,#div_tl_half6,#div_tr_half6,#div_bc_half6,#div_rounded_corner{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_6{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+           #div_tl_half_65
+    {         background-color:pink;
+        width:100px;
+        height:100px;
+        margin-left: 100px;}
+    #div_tl_half6
+    {         background-color:yellow;
+        width:100px;
+        height:100px;
+    margin-top: -200px}
+       #div_tl_half6
+    {         background-color:pink;
+        width:100px;
+        height:100px;
+    margin-left: 100px;
+
+    margin-top: -100px}
+    #div_tr_half6{
+          background-color:yellow;
+        width:150px;
+        height:150px;
+        margin-top: -200px;
+        border-bottom-right-radius: 50px;
+    }
+     #div_rounded_corner
+    {
+       background-color:green;
+        width:50px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -100px;  
+        border-bottom-right-radius: 200px;
+
+        
+    }
+    #div_bc_half6
+    {
+       background-color:blue;
+        width:100px;
+        height:100px;
+        margin-left: 50px;
+        margin-top: -150px;  
+        border-radius: 200px;
+    }
+
+    
+    
+    
+    
+    
+            #div_bc_half8,#div_outer_8,#div_tl_half8,#div_tr_half8,{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_8{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+    #div_tl_half8
+    {         background-color:yellow;
+        width:50px;
+        height:200px;
+    margin-top: -200px}
+    #div_tr_half8{
+          background-color:orange;
+        width:50px;
+        height:200px;
+        margin-left: 50px;
+        margin-top: -200px;
+    }
+    #div_bc_half8
+    {
+       background-color:blue;
+        width:100px;
+        height:100px;
+        margin-left: 100px;
+        margin-top: -200px;  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #div_bc_half9,#div_outer_9,#div_tl_half9,#div_tr_half9,#div_bc_half91,#div_bc_half92,#div_bc_half93,
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -200px;  
+    }{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_9{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+    #div_tl_half9
+    {         background-color:yellow;
+        width:100px;
+        height:200px;
+    margin-top: -200px}
+    #div_tr_half9{
+          background-color:orange;
+        width:100px;
+        height:200px;
+        margin-left: 100px;
+        margin-top: -200px;
+    }
+    #div_bc_half9
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -200px;  
+    }
+       #div_bc_half91
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 50px;
+        margin-top: ;  
+    }
+       #div_bc_half92
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: ;  
+    }
+       #div_bc_half93
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 50px;
+        margin-top: -;  
+    }
+    
+    #div_bc_half10,#div_outer_10,#div_tl_half10,#div_tr_half10,#div_tr_half101,
+    {
+       background-color:blue;
+        width:50px;
+        height:50px;
+        margin-left: 100px;
+        margin-top: -200px;  
+    }{
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        position:relative;
+    }
+    
+    #div_outer_10{
+       background-color: red;
+        width:200px; 
+        height:200px;
+    }
+    #div_tl_half10
+    {         background-color:yellow;
+        width:200;
+        height:200px;
+    margin-top: -200px;
+        border-radius: 200px;
+    }
+
+    #div_tr_half10{
+          background-color:red;
+        width:143px;
+        height:143px;
+        margin-left: 28px;
+        margin-top: -172px;
+    }
+    
+        #div_tr_half101{
+          background-color:yellow;
+        width:143px;
+        height:143px;
+        margin-left: 28px;
+        margin-top: -143px;
+        border-radius: 100px;
+    }
+
+    
+    
+    
+    </style> 
+    
+    
+    
+</head>
+    
+<body>
+<div id="everything">
+<p>1.</p>
+    <div id="outer_div_1">
+    <div id="inner_div_1">    
+    </div>
+    </div>
+        
+        
+        
+<p>2.</p>
+    <div id="outer_div_2">
+    <div id="inner_div_2">
+    <div id="inner_inner_div_2"
+    </div>
+    </div>
+    </div>
+    
+<p>3.</p>
+      <div id="outer_div_1">
+    <div id="inner_div_3">    
+    </div>
+    </div>
+    
+<p>4.</p>
+    <div id="foursquare_tl"></div>
+    <div id="foursquare_tr"></div>
+    <div id="foursquare_bl"></div>
+    <div id="foursquare_br"> </div>
+
+<p>5.</p>
+    <div id="div_outer_4"></div>
+    <div id="div_tl_half"></div>
+    <div id="div_tr_half"></div>
+    <div id="div_bc_half"></div>
+    
+<p>6.</p>
+   <div id="div_outer_5"></div>
+    <div id="div_tl_half5"></div>
+    <div id="div_tr_half5"></div>
+    <div id="div_bc_half5"></div>
+<p>7.</p>
+    <div id="div_outer_6"></div>
+    <div id="#div_tl_half_65"></div>
+    <div id="div_tl_half6"></div>
+    <div id="div_tr_half6"></div>
+    <div id="div_bc_half6"></div>
+    <div id="div_rounded_corner"></div>
+    
+<p>8.</p>
+    <div style='position: absolute'>
+    <div id="div_outer_8"></div>
+    <div id="div_tl_half8"></div>
+    <div id="div_tr_half8"></div>
+    <div id="div_bc_half8"></div>
+        </div>
+<p style="padding-top: 225px">9.</p>
+      <div style='position: absolute'>
+    <div id="div_outer_9"></div>
+    <div id="div_tl_half9"></div>
+    <div id="div_tr_half9"></div>
+    <div id="div_bc_half9"></div>
+    <div id="div_bc_half91"></div> 
+    <div id="div_bc_half92"></div>
+    <div id="div_bc_half93"></div>
+        </div>
+    
+    <p style="padding-top: 225px">10.</p>
+          <div style='position: absolute'>
+    <div id="div_outer_10"></div>
+    <div id="div_tl_half10"></div>
+    <div id="div_tr_half10"></div>
+    <div id="div_bc_half10"></div>
+    <div id="div_tr_half101"></div> 
+        </div>
+</body>
+</html>
