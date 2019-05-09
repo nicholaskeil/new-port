@@ -1,0 +1,205 @@
+
+@keyframes moving{
+    o%{
+transform: translate(-300px,0)
+    
+    }
+
+    100%{
+transform: translate(100vw,0)
+    }
+}
+
+.redghost{
+    margin-left: 1400px;
+    margin-top: 480px;
+    position: absolute;
+    animation: path1;
+animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+.blueghost{
+    margin-left: 450px;
+    margin-top: 480px;
+    position: absolute;
+    animation: path2;
+animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+.yellowghost{
+    margin-left: 881px;
+    margin-top: 1000px;
+    position: absolute;
+    animation:path3;
+animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+@keyframes path1{
+    
+    0%{transform: translate(0,0);}
+    10%{transform: translate(-310px,0);}
+    20%{transform: translate(-310px,210px)}
+    30%{transform:translate(-200px,205px)}
+    45%{transform:translate(-200px,-310px)}
+    65%{transform:translate(-720px,-310px)}
+    75%{transform:translate(-720px,0px)}
+    88%{transform:translate(-1520px,0px)}
+    89%{transform:translate(-1520px,1080px)}
+    90%{transform:translate(900px,1080px)}
+    91%{transform:translate(900px,0px)}
+    99%{transform:translate(0px,0px)}
+}
+
+@keyframes path2{
+    
+    0%{transform: translate(0,0);}
+    10%{transform: translate(0,0);}
+    20%{transform: translate(325px,0);}
+    30%{transform:translate(325px,210px)}
+    40%{transform:translate(430px,210px)}
+    50%{transform:translate(430px,310px)}
+    60%{transform:translate(745px,310px)}
+    70%{transform:translate(745px,0)}
+    88%{transform:translate(1525px,0)}
+    89%{transform:translate(1525px,1080px)}
+    90%{transform:translate(-600px,1080px)}
+    91%{transform:translate(-600px,0px)}
+
+}
+
+@keyframes path3{
+    0%{transform: translate(0,0);}
+ 10%{transform: translate(112px,0);}
+    20%{transform: translate(112px,-107px);}
+    30%{transform: translate(212px,-107px);}
+     40%{transform: translate(212px,-207px);}
+    50%{transform: translate(175px,-207px);}
+     60%{transform: translate(-100px,-207px);}
+    70%{transform: translate(-100px,-107px);}
+    80%{transform: translate(0px,-107px);}
+    
+    
+}
+
+#wrapper{
+
+position:relative;
+height: 400px;
+width: 10vw;
+animation: moving;
+animation-duration:10s;
+animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes legtwo{
+    
+    0% {
+        transform: rotate(-5deg)
+    }
+    50%{
+        transform: rotate(5deg)
+    }
+    100% {
+        transform: rotate(-5deg)
+    }
+    
+}
+
+@keyframes legone{
+     0% {
+        transform: rotate(5deg)
+    }
+    50%{
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(5deg)
+    }
+}
+
+@keyframes timeofday{
+    0%{
+        background-color: black;
+    }
+    10%{
+        background-color: lightblue;
+    }
+    40%{
+        background-color: yellow;
+
+    }
+    60%{
+        background-color:orange;
+    }    
+    70% {
+        background-color:lightblue;
+    }
+    80%{
+        background-color: mediumpurple;
+    }
+    100%{
+        background-color: black
+    }
+}
+
+html{
+background color: lightblue;
+    animation-name: timeofday;
+    animation-duration: 10s
+    animation iteraction-count: infinite;
+    animation-fill-mode: forwards;
+}
+#ground{
+width:100vw;
+    height: 10px;
+    background-color:black;
+}
+
+#head{
+width: 100px;
+height:100px;
+background-color: darkblue;
+border-radius:50px
+}
+
+#body{
+width:100px;
+height:150px;
+background-color:black;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+.legs{
+position:relative;
+height:150px;
+width:50px;
+background-color: greenyellow;
+    display: inline-block;
+    
+}
+#legone{
+    animation-name: legone;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+#legtwo{
+    background-color: lawngreen;
+    animation-name: legtwo;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+.foot{
+    background-color:black;
+    width: 50px;
+    height:30px;
+    position: absolute;
+    left:10px;
+    bottom:0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
